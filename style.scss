@@ -1,0 +1,250 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "extend";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+.container {
+    height: 100vh;
+    background-color: $bgkcolor;
+    background-image: url(assets/wedding.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &_textbox {
+        min-height: 695px;
+        // sual
+        // background-color: $bgkcolor;
+        @include flexbox($items: center, $justify: center);
+
+        &_minibox {
+            height: 300px;
+            // background-color: $bgkcolor;
+            @include flexbox($items: center, $justify: center, $direction: column);
+
+            &_john {
+                font-size: $font-size-30;
+                height: 70px;
+                width: 40%;
+                @extend %box;
+                @include flexbox($items: center, $justify: center);
+            }
+
+            &_married {
+                font-size: $font-size-20;
+                @extend %box;
+                @include flexbox($items: center, $justify: center);
+            }
+
+            &_date {
+                font-size: $font-size-10;
+                @extend %box;
+                @include flexbox($items: center, $justify: center);
+            }
+        }
+    }
+
+    &_detailsbox {
+        background-color: $bgkcolor;
+
+        &_weddingbox {
+            height: 700px;
+            background-color: $bgkcolor;
+            margin: 0 auto;
+            @include flexbox($justify: center, $items: center, $direction: column);
+
+            &_jane {
+                color: gray;
+                // background-color: $maincolor;
+                @extend %box;
+                @include flexbox($justify: center, $items: center);
+            }
+
+            &_imgbox img {
+                height: 400px;
+                width: 800px;
+            }
+
+            &_paragrafh {
+                color: gray;
+                width: 70%;
+                min-height: 150px;
+                // background-color: $maincolor;
+                @include flexbox($justify: center, $items: center);
+            }
+
+            &_button {
+                @include flexbox($justify: center, $items: center);
+                @extend %button;
+                background-color: $buttoncolor;
+            }
+        }
+    }
+
+    &_flowersbox {
+        background-image: url(assets/flowers.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        height: 100vh;
+        display: flex;
+
+        &_txtbox {
+            // background-color: $textcolor;
+            color: white;
+            @include flexbox($justify: center, $items: center, $direction: column);
+
+            &_course {
+                height: 100px;
+                width: 10%;
+                // background-color: $textcolor;
+                font-size: $font-size-30;
+                @include flexbox($justify: center, $items: center);
+            }
+        }
+    }
+
+    &_thewedding {
+        background-color: $bgkcolor;
+        height: 100vh;
+
+        &_wedding {
+            height: 700px;
+            // background-color: $textcolor;
+            margin: 0 auto;
+
+            // &_imgbox {
+            //     height: 300px;
+            //     width: 200px;
+            // }
+            @include flexbox($justify: center, $items: center, $direction: column);
+
+            &_textbox {
+                height: 100px;
+                width: 30%;
+                color: gray;
+                // background-color: $maincolor;
+                @include flexbox($justify: center, $items: center);
+            }
+        }
+    }
+
+    &_ceremony {
+        height: 100vh;
+        background-color: $bgkcolor;
+
+        @include flexbox($justify: space-around, $items: center);
+
+        &_textbox {
+            &_whenbox {
+                &_wh {
+                    @extend %dinner;
+                    font-size: $font-size-19;
+                }
+
+                &_ing {
+                    @extend %dinner;
+                }
+
+                &_dinner {
+                    @extend %dinner;
+                    font-size: $font-size-20;
+                }
+            }
+
+            // background-color: $txtcolor;
+            @include flexbox($justify: space-around, $items: center);
+
+            @extend %minibox;
+        }
+    }
+
+    &_hope {
+        height: 100vh;
+        background-color: $pinkcolor;
+
+        @include flexbox($justify: center, $items: center);
+        // background-color: $maincolor;
+
+        &_textbox {
+            @include flexbox($justify: center, $items: center, $direction: column);
+
+            &_makeit {
+                @extend %rsvp;
+            }
+
+            &_january {
+                @extend %rsvp;
+            }
+
+            &_button {
+                @extend %button;
+                background-color: rgb(185, 77, 95);
+
+                @include flexbox($justify: center, $items: center);
+            }
+        }
+    }
+
+    &_footer {
+        height: 90px;
+        background-color: $footercolor;
+        @include flexbox($justify: center, $items: center);
+
+        &_box {
+            width: 50%;
+            height: inherit;
+            // background-color: $maincolor;
+
+            @include flexbox($justify: center, $items: center);
+
+            &_css {
+                color: white;
+                font-size: $font-size-7;
+            }
+        }
+    }
+}

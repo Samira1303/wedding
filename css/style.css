@@ -1,0 +1,304 @@
+.container_detailsbox_weddingbox_jane, .container_textbox_minibox_date, .container_textbox_minibox_married, .container_textbox_minibox_john {
+  height: 70px;
+  width: 30%;
+  color: white;
+}
+
+.container_hope_textbox_button, .container_detailsbox_weddingbox_button {
+  width: 105px;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 20px 5px;
+}
+.container_hope_textbox_button:hover, .container_detailsbox_weddingbox_button:hover {
+  background-color: azure;
+  color: black;
+}
+
+.container_ceremony_textbox {
+  min-height: 200px;
+  width: 100%;
+  color: rgb(124, 111, 111);
+  text-align: center;
+}
+
+.container_ceremony_textbox_whenbox_dinner, .container_ceremony_textbox_whenbox_ing, .container_ceremony_textbox_whenbox_wh {
+  height: 70px;
+  width: 100%;
+}
+
+.container_hope_textbox_january, .container_hope_textbox_makeit {
+  height: 60px;
+  width: 100%;
+  color: rgb(101, 93, 93);
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.container {
+  height: 100vh;
+  background-color: rgb(229, 229, 229);
+  background-image: url(assets/wedding.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container_textbox {
+  min-height: 695px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_textbox_minibox {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_textbox_minibox_john {
+  font-size: 25px;
+  height: 70px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_textbox_minibox_married {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_textbox_minibox_date {
+  font-size: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_detailsbox {
+  background-color: rgb(229, 229, 229);
+}
+.container_detailsbox_weddingbox {
+  height: 700px;
+  background-color: rgb(229, 229, 229);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_detailsbox_weddingbox_jane {
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_detailsbox_weddingbox_imgbox img {
+  height: 400px;
+  width: 800px;
+}
+.container_detailsbox_weddingbox_paragrafh {
+  color: gray;
+  width: 70%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_detailsbox_weddingbox_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-color: black;
+}
+.container_flowersbox {
+  background-image: url(assets/flowers.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+  display: flex;
+}
+.container_flowersbox_txtbox {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_flowersbox_txtbox_course {
+  height: 100px;
+  width: 10%;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_thewedding {
+  background-color: rgb(229, 229, 229);
+  height: 100vh;
+}
+.container_thewedding_wedding {
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_thewedding_wedding_textbox {
+  height: 100px;
+  width: 30%;
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_ceremony {
+  height: 100vh;
+  background-color: rgb(229, 229, 229);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+}
+.container_ceremony_textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+}
+.container_ceremony_textbox_whenbox_wh {
+  font-size: 20px;
+}
+.container_ceremony_textbox_whenbox_dinner {
+  font-size: 20px;
+}
+.container_hope {
+  height: 100vh;
+  background-color: rgb(237, 182, 191);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_hope_textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_hope_textbox_button {
+  background-color: rgb(185, 77, 95);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_footer {
+  height: 90px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_footer_box {
+  width: 50%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container_footer_box_css {
+  color: white;
+  font-size: 11px;
+}/*# sourceMappingURL=style.css.map */

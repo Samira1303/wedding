@@ -1,0 +1,44 @@
+%box {
+    height: 70px;
+    width: 30%;
+    color: white;
+    // background-color: $maincolor;
+}
+
+%button {
+    width: 105px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 20px 5px;
+
+    &:hover {
+        background-color: azure;
+        color: black;
+    }
+}
+
+%minibox {
+    min-height: 200px;
+    width: 100%;
+    // background-color: $maincolor;
+    color: rgb(124, 111, 111);
+    text-align: center;
+}
+
+%dinner {
+    height: 70px;
+    width: 100%;
+    // background-color: $maincolor;
+}
+
+%rsvp {
+    height: 60px;
+    width: 100%;
+    // background-color: aqua;
+    color: rgb(101, 93, 93);
+    text-align: center;
+}
